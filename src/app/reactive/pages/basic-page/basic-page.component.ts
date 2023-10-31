@@ -22,8 +22,8 @@ export class BasicPageComponent implements OnInit {
 
   public myForm: FormGroup = this.fb.group({
     name: ['',[Validators.required, Validators.minLength(3)]],
-    price:[0, [Validators.required, Validators.min(0)]],
-    inStorage:[0, [Validators.required, Validators.min(0)]],
+    price:[0, [Validators.required, Validators.min(1)]],
+    inStorage:[0, [Validators.required, Validators.min(1)]],
   })
 
   constructor(private fb: FormBuilder){}
