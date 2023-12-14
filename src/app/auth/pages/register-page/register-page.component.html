@@ -41,7 +41,7 @@
                 <div class="col-sm-9">
                     <input type="text"
                            class="form-control"
-                           formArrayName="username"
+                           formControlName="username"
                            placeholder="Nombre código del usuario">
                     <span class="form-text text-danger">
                          El username no puede ser Strider
@@ -108,7 +108,7 @@
 <pre>{{ myForm.value.email | json }}</pre>
 
 <h5>Username</h5>
-<pre>{{ myForm.value.username | json }}</pre>
+<pre>{{ myForm.controls['username'].errors| json }}</pre>
 
 
 <h5>Password</h5>
